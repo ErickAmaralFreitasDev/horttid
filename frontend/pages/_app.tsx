@@ -1,4 +1,7 @@
 import '../styles/globals.css'
+import 'primereact/resources/themes/lara-light-cyan/theme.css'  
+import 'primereact/resources/primereact.min.css'                
+import 'primeicons/primeicons.css'                              
 import type { AppProps } from 'next/app'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -7,21 +10,13 @@ import { useEffect, useState } from 'react'
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter()
-  const [isLoading, setIsLoading] = useState(true)
+  const [isLoginPage, setIsLoginPage] = useState(false)
 
   useEffect(() => {
-    const isFirstVisit = !localStorage.getItem('hasVisited')
-    const isLoginPage = router.pathname === '/login'
+    setIsLoginPage(router.pathname === '/login')
+  }, [router.pathname])
 
-    if (isFirstVisit && !isLoginPage) {
-      localStorage.setItem('hasVisited', 'true')
-      router.push('/login')
-    } else {
-      setIsLoading(false)
-    }
-  }, [router])
-
-  if (isLoading) {
+  if (router.pathname === undefined) {
     return (
       <div style={{ 
         display: 'flex', 

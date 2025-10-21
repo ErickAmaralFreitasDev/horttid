@@ -1,0 +1,133 @@
+.container {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  color: #27332F;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.createItem {
+  background-color: #16D991;
+  border: 2px solid #006F46;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 24px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.createTitle {
+  color: #006F46;
+  margin: 0 0 16px 0;
+  text-align: center;
+  font-size: 18px;
+}
+
+.inputGroup {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.clipContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border: 1px solid #006F46;
+  border-radius: 4px;
+  cursor: not-allowed; 
+}
+
+.clipContainer:hover {
+  background-color: #f0f0f0; 
+}
+
+.input {
+  padding: 10px 12px;
+  border: 1px solid #006F46;
+  border-radius: 4px;
+  background-color: white;
+  color: #666;
+  font-size: 14px;
+  min-width: 120px;
+}
+
+.input:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.input::placeholder {
+  color: #999;
+}
+
+.productInfo {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.productDetails {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  flex: 1;
+}
+
+.plusSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.productList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.productItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: white;
+}
+
+.productImage {
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 5rem;
+  margin-left: 2rem;
+}
+
+.productName {
+  margin: 0;
+  color: #006F46;
+  font-size: 18px;
+}
+
+.productCategory {
+  margin: 4px 0;
+  color: #666;
+}
+
+.productPrice {
+  margin: 0;
+  font-weight: bold;
+  font-size: 16px;
+}

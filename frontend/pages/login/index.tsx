@@ -9,9 +9,18 @@ export default function Login() {
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault()
-    // Não envia dados para lugar nenhum - apenas navega
     router.push('/')
   }
+
+  // const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  //   const value = e.target.value.slice(0, 15) 
+  //   setEmail(value)
+  // }
+
+  // const handlePasswordChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  //   const value = e.target.value.slice(0, 15)
+  //   setPassword(value)
+  // }
 
   return (
     <div className={styles.container}>
@@ -25,9 +34,10 @@ export default function Login() {
               type="email"
               id="email"
               value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              // onChange={handleEmailChange}
               className={styles.input}
               placeholder="seu@email.com"
+              maxLength={15}
             />
           </div>
 
@@ -37,9 +47,10 @@ export default function Login() {
               type="password"
               id="password"
               value={password}
-              onChange={(e) => setPassword(e.target.value)}
+              // onChange={handlePasswordChange}
               className={styles.input}
               placeholder="Sua senha"
+              maxLength={15}
             />
           </div>
 
