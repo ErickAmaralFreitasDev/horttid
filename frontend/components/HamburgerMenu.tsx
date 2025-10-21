@@ -29,7 +29,7 @@ const HamburgerMenu = () => {
             <h3>Menu</h3>
             <ul>
               <li onClick={() => handleNavigation('/')}>Home</li>
-              <li onClick={() => handleNavigation('/list')}>Ítens</li>
+              <li onClick={() => handleNavigation('/list')}>Itens</li>
             </ul>
           </div>
         </div>
