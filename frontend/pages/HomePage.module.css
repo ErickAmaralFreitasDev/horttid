@@ -1,0 +1,10 @@
+.user {
+  color: #006F46;
+}
+
+.container {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

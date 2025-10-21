@@ -1,0 +1,25 @@
+.header {
+  background-color: white;
+  border-color: #16D991;
+  border-style: solid;
+  border-width: 2px 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.leftSection, .centerSection, .rightSection {
+  display: flex;
+  align-items: center;
+}
+
+.centerSection {
+  flex: 1;
+  justify-content: center;
+}
+
+.rightSection {
+  width: 40px; 
+}
